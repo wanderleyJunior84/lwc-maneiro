@@ -1,0 +1,16 @@
+<template>
+    <lightning-record-edit-form object-api-name={opportunityObject} onsuccess={handleOpportunityCreated} onerror={handleError}>
+        <lightning-messages></lightning-messages>
+        <div class="slds-grid">
+            <div class="slds-box slds-col slds-size_1-of-2 slds-theme_default">
+                <lightning-input-field field-name={nameField}></lightning-input-field>
+               
+                <lightning-input-field field-name={StageNameField}></lightning-input-field>
+
+                <lightning-input-field field-name={CloseDateField}></lightning-input-field>
+            </div>
+            
+         </div>
+        <lightning-button type="submit" variant="destructive" label="Cria Opportunidade"></lightning-button>
+    </lightning-record-edit-form>
+</template>
